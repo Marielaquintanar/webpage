@@ -1,0 +1,245 @@
+stylecss2
+@import url("https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --main-color: rgb(9, 33, 110);
+    --second-color:#000000;
+}
+section{
+    padding: 50px 10%;
+}
+*::selection{
+    color: rgb(255, 255, 255);
+    background: #ffffff;
+}
+img{
+    width: 100%;
+}
+header{
+    position: fixed;
+    width: 90%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(131, 131, 131);
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.navbar a:hover{
+    color: #000000;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none; 
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #e4e3e3;
+    gap: 1rem;
+}
+.home-text{
+    flex: 1 1 17rem;   
+}
+.home-img{
+    flex: 1 1 16rem;
+}
+.home-img img{
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-11px, 0);
+    }
+    50%{
+        transform: translate(-0px, -11px);
+    }
+    100%{
+        transform: translate(-11px, 0);
+    }
+}
+.home-text h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.home-text h2{
+    font-size: 3.2rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.btn{
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius:30px;
+    color: var(--second-color);
+    font-weight:500;
+}
+.btn hover{
+    color: #00065c;
+    background: var(--second-color);
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.heading h1{
+    font-size: 3rem;
+    color: #000000;
+}
+.box-img
+{
+    position: left;
+    max-width: 280px;
+}  
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.skills-container .box{
+    flex: 1 1 10rem;
+    background: #8b8a8a;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+}
+.box .btn{
+    border: 2px solid #e4e3e3;
+    color: #e4e3e3;
+}
+.box .btn:hover{
+    background: #e4e3e3;
+    color: var(--main-color);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.box-img
+{
+    position: left;
+    max-width: 280px;
+}  
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.projects-container .box{
+    flex: 1 1 10rem;
+    background: #8b8a8a;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+}
+.box .btn{
+    border: 2px solid #e4e3e3;
+    color: #e4e3e3;
+}
+.box .btn:hover{
+    background: #e4e3e3;
+    color: var(--main-color);
+}
+.box .btn{
+    border: 2px solid #e4e3e3;
+    color: #e4e3e3;
+}
+.box .btn:hover{
+    background: #e4e3e3;
+    color: var(--main-color);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.box-img
+{
+    position: left;
+    max-width: 280px;
+}  
+.social-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.social-container .box{
+    flex: 1 1 10rem;
+    background: #8b8a8a;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+}
+.box .btn{
+    border: 2px solid #e4e3e3;
+    color: #e4e3e3;
+}
+.box .btn:hover{
+    background: #000000;
+    color: #ffffff;
+}
+h1 { 
+    text-align: center;
+}
+
